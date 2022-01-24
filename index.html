@@ -18,36 +18,45 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    
   </head>
   <body>
-      <nav class="nav">
-          <h2>XDA</h2>
-        <ul>
-            <li><a href="#">Mujer</a></li>
-            <li><a href="#">Hombre</a></li>
-            <li><a href="#">Accesorio</a></li>
-            <li><a href="#">Bolg</a></li>
-        </ul>
-      </nav>
-      <section>
-          <img src="assets/img/imagen1.png" alt="img-gafas">
-          <h2></h2>
-          <article>
-              <p></p>
-              <button><a href="#"></a>Ir a tienda</button>
-          </article>
-      </section>
-      <footer>
-          <h2>Newsletter</h2>
-          <h3>Correo Electrónico</h3>
-          <input type="email" placeholder="Ingresa tu correo">
-      </footer>
-
-
-
-
-
+    <div class="nav">
+      <h1 class="nav__brand">XDA</h1>
+      <label for="toggle" class="nav__toggle">&#9776</label>
+      <input type="checkbox" id="toggle" class="nav__input">
+      <div class="nav__menu">
+        <a href="#" class="nav__menu--items">Mujer</a>
+        <a href="#" class="nav__menu--items">Hombre</a>
+        <a href="#" class="nav__menu--items">Accesorios</a>
+        <a href="#" class="nav__menu--items">Blog</a>
+      </div>
+    </div>
+       
+<header class="container">
+    <img class="crop" src="assets/img/imagen1.png" /> 
+</header>
     
+   <section class="content">
+      <h2 class="content__subtitle">LOREM IPSUN AD<br><br>VALOREM</br></h2>
+      <p class="content__paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
+        accusantium, doloribus maiores vero. doloribus maiores,  ipsa 
+      </p>
+      <button class="content__button">Ir a la tienda</button>
+   </section>
+
+    <footer class="newsletter">
+      <div class="newsletter__container">
+        <h2 class="newsletter__title">Newsletter</h2>
+        <h3 class="newsletter__text">Correo Electrónico</h3>
+        <input type="email" name="email" id="email" placeholder="Ingresa tu correo electrónico">
+      </div>
+      <div class="sub-footer">
+          <p class="sub-footer__tex">Suscribir</p>
+      </div>
+      
+    </footer>
+  
   </body>
- 
 </html>

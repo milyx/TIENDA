@@ -1,0 +1,62 @@
+.newsletter {
+  background-color: $smoky-black;
+  height: 152px;
+  width: 85%;
+  display: flex;
+  @include screen-l {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 200px;
+    margin-top: 75px;
+  }
+
+  &__text {
+    color: $isabelline;
+    font-family: $old-standard-TT;
+    font-weight: $old-standard-TT-regular;
+    font-size: $x-small;
+    padding: 7px 30px;
+  }
+  &__title {
+    color: $light-gray;
+    font-family: $old-standard-TT;
+    font-weight: $old-standard-TT-bold;
+    font-size: $x-large;
+    padding: 30px 30px 0 30px;
+  }
+}
+#email {
+  background-color: $white;
+  margin-left: 30px;
+  padding: 7px 120px 7px 10px;
+  text-align: left;
+  font-family: $raleway;
+  font-size: $x-small;
+}
+.sub-footer {
+  width: 10%;
+
+  &__tex {
+    font-family: $old-standard-TT;
+    font-weight: $old-standard-TT-bold;
+    color: $smoky-black;
+    text-align: center;
+    writing-mode: vertical-lr;
+    transform: rotate(0deg);
+    -webkit-writing-mode: vertical-lr;
+    -ms-writing-mode: vertical-lr;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    padding: 10px 0 0 10px;
+    margin: 5px 0 0 15px;
+
+    @include screen-l {
+      padding: 0 0 80px 695px;
+      font-size: $xx-large;
+      margin-top: -75px;
+    }
+  }
+}
