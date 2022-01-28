@@ -9,40 +9,9 @@
     width: 50%;
     height: 100%;
     float: right;
-    @include screen-md {
-     
-    }
-  
   }
-}
-.container > .crop {
-  position: absolute;
-  left: -100%;
-  right: -100%;
-  top: -20%;
-  bottom: -90%;
-  margin: auto;
-  min-height: 100%;
-  min-width: 100%;
-  @include screen-l {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-   
-  }
-
-  @include screen-md {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
+  @include screen-max-md {
+    height: 600px;
   }
 }
 
@@ -53,7 +22,9 @@
     flex-direction: column;
     padding: 70px 0 50px 70px;
   }
-
+  @include screen-max-md {
+    margin-bottom: 60px;
+  }
   &__button {
     border: solid 1px $smoky-black;
     padding: 10px;
@@ -67,10 +38,10 @@
     }
   }
   &__paragraph {
-      font-family: $raleway;
-      color: $granite-gray;
-      font-weight: $raleway-bold;
-      padding: 20px 0;
+    font-family: $raleway;
+    color: $granite-gray;
+    font-weight: $raleway-bold;
+    padding: 20px 0;
     @include screen-l {
       width: 30%;
       height: 100%;
@@ -79,10 +50,10 @@
     }
   }
   &__subtitle {
-      font-family: $old-standard-TT;
-      color: $smoky-black;
-      font-weight: $old-standard-TT-bold;
-      font-size: $x-large;
+    font-family: $old-standard-TT;
+    color: $smoky-black;
+    font-weight: $old-standard-TT-bold;
+    font-size: $x-large;
     @include screen-l {
       color: $smoky-black;
       font-weight: $raleway-bold;

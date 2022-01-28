@@ -153,11 +153,15 @@ body {
 }
 @media (min-width: 1200px) {
   .newsletter {
-    display: flex;
     flex-direction: column;
     width: 45%;
     height: 200px;
     margin-top: 75px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 820px) {
+  .newsletter {
+    height: 180px;
   }
 }
 .newsletter__text {
@@ -210,6 +214,11 @@ body {
     margin-top: -75px;
   }
 }
+@media only screen and (min-width: 769px) and (max-width: 820px) {
+  .sub-footer__tex {
+    font-size: 30px;
+  }
+}
 
 html,
 body {
@@ -236,6 +245,20 @@ body {
 @media (min-width: 1200px) {
   .nav__brand {
     width: 100px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 820px) {
+  .nav__brand {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    width: 75px;
+    height: 70px;
   }
 }
 .nav__menu {
@@ -316,36 +339,9 @@ body {
     float: right;
   }
 }
-.container > .crop {
-  position: absolute;
-  left: -100%;
-  right: -100%;
-  top: -20%;
-  bottom: -90%;
-  margin: auto;
-  min-height: 100%;
-  min-width: 100%;
-}
-@media (min-width: 1200px) {
-  .container > .crop {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
-    min-height: 100%;
-    min-width: 100%;
-  }
-}
-@media (min-width: 820px) {
-  .container > .crop {
-    position: absolute;
-    left: -100%;
-    right: -100%;
-    top: -100%;
-    bottom: -100%;
-    margin: auto;
+@media only screen and (min-width: 769px) and (max-width: 820px) {
+  .container {
+    height: 600px;
   }
 }
 
@@ -357,6 +353,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 70px 0 50px 70px;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 820px) {
+  .content {
+    margin-bottom: 60px;
   }
 }
 .content__button {
@@ -399,11 +400,6 @@ body {
     font-size: 50px;
     padding-top: 10px;
   }
-}
-
-.form {
-  background-color: #FFF;
-  margin: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
