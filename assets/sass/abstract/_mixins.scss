@@ -1,12 +1,12 @@
 @mixin screen-sm {
-    @media (max-width: 768px){
+    @media (min-width: 767px){
         @content;
     }
     
 }
 
 @mixin screen-md {
-    @media (min-width: 820px){
+    @media (min-width: 992px){
         @content;
     }
     

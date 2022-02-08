@@ -131,9 +131,7 @@
   body {
     min-height  : 100vh;
     font-size   : 100%;
-    font-family : var(--tipo-principal);
-    color       : var(--color-primario);
-    background-color: var(--color-secundario);
+  
     /* opcional */ line-height: 1.4em;
     /* opcional */ hyphens: auto;
     /* opcional */ font-smooth: always;

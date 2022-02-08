@@ -1,64 +1,65 @@
-.container {
-  width: 100%;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
+.main {
+  display: flex;
 
-  @include screen-l {
-    display: flex;
-    width: 50%;
-    height: 100%;
-    float: right;
-  }
-  @include screen-max-md {
-    height: 600px;
-  }
-}
-
-.content {
-  padding: 30px;
-  @include screen-l {
-    display: flex;
-    flex-direction: column;
-    padding: 70px 0 50px 70px;
-  }
-  @include screen-max-md {
-    margin-bottom: 60px;
-  }
-  &__button {
-    border: solid 1px $smoky-black;
-    padding: 10px;
-    font-family: $raleway;
-    font-weight: $raleway-bold;
-
+  &__content {
     @include screen-l {
-      width: 110px;
-      height: 100%;
-      font-size: $x-small;
+      padding-left: 50px;
+    }
+  }
+  &__left {
+    width: 100%;
+    @include screen-l {
+      width: 40%;
     }
   }
   &__paragraph {
     font-family: $raleway;
-    color: $granite-gray;
-    font-weight: $raleway-bold;
-    padding: 20px 0;
+    font-weight: $raleway-regular;
+    font-size: $x-large;
+    padding: 30px 30px 5px 30px;
+
+    text-align: left;
     @include screen-l {
-      width: 30%;
-      height: 100%;
-      float: left;
-      padding: 40px 0 30px 0;
+      padding: 20px 210px 20px 0;
+    }
+  }
+  &__header {
+    background: url(../img/imagen1.png) no-repeat center;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    @include screen-l {
+      display: none;
+    }
+  }
+  &__right {
+    display: none;
+    background: url(../img/imagen1.png) no-repeat center;
+    background-size: cover;
+    width: 0%;
+    @include screen-l {
+      display: block;
+      width: 60%;
     }
   }
   &__subtitle {
     font-family: $old-standard-TT;
-    color: $smoky-black;
     font-weight: $old-standard-TT-bold;
-    font-size: $x-large;
+    font-size: $xx-large;
+    padding: 10px 0 20px 30px;
     @include screen-l {
-      color: $smoky-black;
-      font-weight: $raleway-bold;
       font-size: $xxx-large;
-      padding-top: 10px;
+      padding: 30px 0 40px 0px;
+    }
+  }
+  &__title {
+    font-family: $old-standard-TT;
+    font-weight: $old-standard-TT-bold;
+    font-size: $xx-large;
+    padding: 30px 0 5px 30px;
+    @include screen-l {
+      font-size: $xxx-large;
+      padding: 70px 0 40px 0px;
     }
   }
 }

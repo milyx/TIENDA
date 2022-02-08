@@ -18,6 +18,7 @@ body {
     font-family: $old-standard-TT;
     font-weight: $raleway-bold;
     font-size: $x-large;
+    z-index:99;
     @include screen-l {
       width: 100px;
     }
@@ -40,7 +41,7 @@ body {
     margin: 0 30px 0 0;
     font-family: $raleway;
     font-size: $raleway-bold;
-    color: $smoky-black;
+    color: $white;
     font-size: $medium;
     text-align: center;
     width: 100%;
@@ -48,6 +49,7 @@ body {
     position: absolute;
     z-index: 80;
     float: right;
+    background: $transparent;
 
     @include screen-md {
       display: flex;
@@ -56,19 +58,6 @@ body {
       padding-right: 40px;
     }
 
-    @include screen-sm {
-      &--items {
-        display: block;
-        border-bottom: 1px solid $granite-gray;
-        margin: 0;
-        background: $transparent;
-        font-family: $raleway;
-        font-weight: $raleway-bold;
-        color: $isabelline;
-        width: 80%;
-        margin-left: 50px;
-      }
-    }
     @include screen-md {
       &--items {
         text-decoration: none;
@@ -77,7 +66,11 @@ body {
         display: block;
       }
     }
-  }
+    @include screen-l {
+        color: $smoky-black;
+        background: $white;
+      }
+   }
 
   &__toggle {
     display: block;
